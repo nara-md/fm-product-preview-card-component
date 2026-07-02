@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* Custom Styles */
+
+:root {
+  /* Colors */
+  --clr-green-500: hsl(158, 36%, 37%);
+  --clr-green-700: hsl(158, 42%, 18%);
+
+  --clr-black: hsl(212, 21%, 14%);
+  --clr-grey: hsl(228, 12%, 48%);
+  --clr-cream: hsl(30, 38%, 92%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --font-family-body: 'Montserrat', sans-serif;
+  --font-family-title: 'Fraunces', serif;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --fs-body: 14px;
+}
+
+body {
+  font-family: var(--font-family-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  color: var(--clr-black);
+  background-color: var(--clr-cream);
+  display: grid;
+  place-content: center;
+  padding: 1rem;
+}
+
+article {
+  background-color: var(--clr-white);
+  width: 650px;
+  border-radius: 1rem;
+  display: flex;
+  box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.1);
+}
+
+article .card__content {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+article .card__content__subtitle {
+  letter-spacing: 0.5rem;
+  color: var(--clr-grey);
+  font-size: var(--fs-body);
+}
+
+article .card__content__title {
+  font-family: var(--font-family-title);
+  font-size: 2rem;
+  max-width: 10ch;
+  line-height: 2rem;
+}
+
+article .card__content__description {
+  color: var(--clr-grey);
+  font-size: var(--fs-body);
+  max-width: 15rem;
+  line-height: 1.5rem;
+}
+
+article .card__content__price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+article .card__content__price--new {
+  font-family: var(--font-family-title);
+  font-size: 2rem;
+  color: var(--clr-green-500);
+}
+
+article .card__content__price--old {
+  font-family: var(--font-family-body);
+  font-size: var(--fs-body);
+  color: var(--clr-grey);
+  text-decoration: line-through;
+}
+
+article .card__content__btn {
+  background-color: var(--clr-green-500);
+  color: var(--clr-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+article .card__content__btn:hover {
+  background-color: var(--clr-green-700);
+}
+
+article picture {
+  width: 50%;
+}
+
+article picture img {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}

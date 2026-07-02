@@ -113,3 +113,42 @@ article picture img {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
+
+@media (max-width: 768px) {
+  article {
+    flex-direction: column;
+    width: 350px;
+  }
+
+  article picture img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+  }
+
+  article picture {
+    width: unset;
+  }
+
+  article .card__content__description {
+    max-width: 18rem;
+  }
+}
+
+/* Footer Attribution styling */
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--clr-grey);
+}
+
+.attribution a {
+  color: var(--clr-green-700);
+  text-decoration: none;
+  font-weight: var(--fw-bold);
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}

@@ -45,7 +45,8 @@ ol[role='list'] {
 /* 5. Set core body defaults */
 body {
   min-height: 100vh;
-  min-height: 100dvh; /* Dynamic viewport height for modern browsers */
+  min-height: 100dvh;
+  /* Dynamic viewport height for modern browsers */
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -82,6 +83,15 @@ select {
   font: inherit;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
 /* 10. Make sure textareas without a rows attribute are not tiny */
 textarea:not([rows]) {
   min-height: 10em;
@@ -97,7 +107,7 @@ textarea:not([rows]) {
   html:focus-within {
     scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {

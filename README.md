@@ -10,7 +10,7 @@ A clean, responsive implementation of the [Frontend Mentor Product preview card 
 
 ### Mobile View
 
-![Mobile Preview of the Product Preview Card Component](./assets/screenshots/mobile-preview.png)
+<img src="./assets/screenshots/mobile-preview.png" alt="Mobile Preview of the Product Preview Card Component" width=50%>
 
 ## Features
 
